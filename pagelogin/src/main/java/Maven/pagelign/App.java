@@ -1,7 +1,7 @@
 package Maven.pagelign;
 
 /**
- * Hello world!
+ * Hello-world!
  *
  */
 public class App 
