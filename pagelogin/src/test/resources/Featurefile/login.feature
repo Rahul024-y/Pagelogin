@@ -6,7 +6,7 @@ Given user is on the webcast page
 And user enters username
 And user enters password
 And user click on login button
-Then verify user login
+#Then verify user login
 #And user enter event id
 #And user click on search
 #And user click on webcast

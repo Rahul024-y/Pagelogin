@@ -14,8 +14,8 @@ public class login extends setup {
 		
 		System.out.println("Processing... Please wait");
 		
-	 Thread.sleep(30000);
-		 System.out.println("Self healing process started");
+	// Thread.sleep(30000);
+		// System.out.println("Self healing process started");
 		 
 	}
 

@@ -10,6 +10,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 
@@ -50,9 +51,19 @@ public class setup {
 		System.setProperty("webdriver.chrome.verboseLogging", "true");
 		System.setProperty("wdm.log.level", "DEBUG");
 			if(browserName.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\ADMIN\\Documents\\Work\\chromedriver-win64\\chromedriver.exe");
+				//String driverPath = System.getProperty("user.dir") + "\\chromedriver-win64\\chromedriver.exe";
+				//System.setProperty("webdriver.chrome.driver", driverPath);ChromeOptions options = new ChromeOptions();
+				ChromeOptions options = new ChromeOptions();
+			  //  options.addArguments("--headless=new");
+			    options.addArguments("--disable-gpu");
+			    options.addArguments("--remote-allow-origins=*");
+
+			    driver = new ChromeDriver(options);
+
+			    Thread.sleep(5000);
 				
-				driver = new ChromeDriver();	
+				//driver = new ChromeDriver();	
+				
 				//driver = new ChromeDriver();
 			    //  driver = SelfHealingDriver.create(bdriver);
 			    //  System.setProperty("webdriver.chrome.verboseLogging", "true");
