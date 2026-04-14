@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"html:target/reports/folder/.html","json:target/cucumber.json"}, dryRun =false, tags= {"@first1"} , features={"C:\\Users\\ADMIN\\git\\Pagelogin\\pagelogin\\src\\test\\java\\Featurefile"})
+@CucumberOptions(format = {"html:target/reports/folder/.html","json:target/cucumber.json"}, dryRun =false, tags= {"@first1"} , features={"classpath:Featurefile"})
 
 public class TestRun {
 
