@@ -34,7 +34,7 @@ public class setup {
 	public static void beforeClass() throws Exception {
 		
 		prop = new Properties();
-		FileReader file = new FileReader("\\C:\\Users\\ADMIN\\eclipse-workspace\\Low_Priority\\src\\test\\java\\properties\\configuration.property");
+		FileReader file = new FileReader("src/test/resources/properties/configuration.property");
 		prop.load(file);
 		prop.getProperty("browser");
 		baseURL=prop.getProperty("appURL");
